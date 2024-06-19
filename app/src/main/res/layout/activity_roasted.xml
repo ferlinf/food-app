@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Roasted"
+    android:background ="@color/krem">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/roasted_detail"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <ImageView
+                android:onClick="arrow"
+                android:id="@+id/arrowBackImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/baseline_arrow_back_ios_24" />
+
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logo"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:src="@drawable/bg_detail"/>
+
+        <TextView
+            android:id="@+id/dishNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roasted Chicken"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/montserratbold"
+            android:textColor="@color/black"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:id="@+id/categoryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dishNameTextView"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="15dp"
+            android:text="Main Course"
+            android:fontFamily="@font/montserratsemibold"
+            android:textColor="@color/green"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ingredientsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingridients"
+            android:textSize="16dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserratregular"
+            android:layout_below="@id/categoryTextView"/>
+
+        <TextView
+            android:id="@+id/ingridients1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ingredientsTextView"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:text="4 Pounds whole chicken "/>
+
+        <TextView
+            android:id="@+id/ingridients2"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/ingridients1"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:text="Olive Oil "/>
+
+        <TextView
+            android:id="@+id/ingridients3"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/ingridients2"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:text="Italian seasoning "/>
+
+        <TextView
+            android:id="@+id/ingridients4"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/ingridients3"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:text="Salt"/>
+
+        <TextView
+            android:id="@+id/ingridients5"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/ingridients4"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:text="Papper"/>
+
+        <TextView
+            android:id="@+id/instructionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ingridients5"
+            android:text="Step"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserratregular"
+            android:layout_marginLeft="34dp"
+            />
+
+        <TextView
+            android:id="@+id/Steps1"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/instructionTextView"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:text="1. pat the chicken dry and truss the legs (you don’t need to truss or tuck the wings). Trussing helps to cook the chicken legs and thighs evenly and avoid drying out the breast since the cavity will be exposed."/>
+
+        <TextView
+            android:id="@+id/Steps2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/Steps1"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:text="2. evenly rub the chicken with oil and pat in the seasoning. Don’t be afraid to add a bit more salt, as this will help crisp up the skin. As for the oil, make sure to rub it underneath the chicken as well, so all sides are fully coated."/>
+
+        <TextView
+            android:id="@+id/Steps3"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/Steps2"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:text="3. let’s get to roasting! Roast the chicken at 425°F (220°C) for about 70 to 90 minutes, or until it’s beautifully golden! To make sure your chicken is cooked perfectly, check out my tips in the next section."/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
+

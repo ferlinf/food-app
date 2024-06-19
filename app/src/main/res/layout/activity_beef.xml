@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Beef"
+    android:background="@color/krem">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/beef_detail"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <ImageView
+                android:onClick="arrow"
+                android:id="@+id/arrowBackImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/baseline_arrow_back_ios_24" />
+
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logo"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:src="@drawable/bg_detail"/>
+
+        <TextView
+            android:id="@+id/dishNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beef Steak"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/montserratbold"
+            android:textColor="@color/black"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:id="@+id/categoryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dishNameTextView"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="15dp"
+            android:text="Main Course"
+            android:fontFamily="@font/montserratsemibold"
+            android:textColor="@color/green"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ingredientsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingridients"
+            android:textSize="16dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserratregular"
+            android:layout_below="@id/categoryTextView"/>
+
+        <TextView
+            android:id="@+id/ingridients1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ingredientsTextView"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:text="4 pounds New York strip steak, sliced thin "/>
+
+        <TextView
+            android:id="@+id/ingridients2"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/ingridients1"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:text="1 lemon, juiced"/>
+
+        <TextView
+            android:id="@+id/ingridients3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/ingridients2"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:text="3 tablespoons soy sauce "/>
+
+        <TextView
+            android:id="@+id/ingridients4"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/ingridients3"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:text="1 teaspoon white sugar"/>
+
+        <TextView
+            android:id="@+id/ingridients5"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/ingridients4"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:text="salt and pepper to taste"/>
+
+        <TextView
+            android:id="@+id/ingridients6"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/ingridients5"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:text="1 tablespoon cornstarch"/>
+
+
+        <TextView
+            android:id="@+id/ingridients7"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/ingridients6"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:text="¼ cup vegetable oil"/>
+
+        <TextView
+            android:id="@+id/ingridients8"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/ingridients7"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:text="3 tablespoons olive oil"/>
+
+
+        <TextView
+            android:id="@+id/ingridients9"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/ingridients8"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:text="1 onion, chopped"/>
+
+        <TextView
+            android:id="@+id/ingridients10"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/ingridients9"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:text="2 cloves garlic, chopped"/>
+
+
+
+        <TextView
+            android:id="@+id/instructionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ingridients10"
+            android:text="Step"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserratregular"
+            android:layout_marginLeft="34dp"
+            />
+
+        <TextView
+            android:id="@+id/Steps1"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/instructionTextView"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:text="1. Combine cream cracker crumbs, sugar, and melted butter. Press the crumb mixture in the bottom and up the sides of a 9-inch springform pan. Preheat the oven to 350°F and bake for 10 minutes. Set aside to cool."/>
+
+        <TextView
+            android:id="@+id/Steps2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/Steps1"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:text="2. Beat the cream cheese with an electric mixer until smooth and creamy. Beat in the sugar, sour cream, salt, and vanilla extract until well combined. Gently stir in lightly beaten eggs."/>
+
+        <TextView
+            android:id="@+id/Steps3"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/Steps2"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:text="3. Pour the filling over the prepared crust and set it inside a water bath. A water bath is just a pan of water placed in the oven in which you put the cake pan during baking. It ensures the cheesecake bakes at an even temperature and keeps the top of the cheesecake from cracking.
+
+            Bake in a 300°F oven for 1 hour then turn the oven off and let the cheesecake sit in the oven for another hour with the door closed.
+
+            Remove the cheesecake from the oven and set it on a wire rack to cool completely then refrigerate for 4 at least 4 hours or overnight."/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
